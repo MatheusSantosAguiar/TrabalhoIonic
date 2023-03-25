@@ -1,0 +1,7 @@
+{
+  "name": "PãoBurger",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
