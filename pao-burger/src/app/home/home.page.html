@@ -1,17 +1,32 @@
 <ion-header>
   <ion-row class="c1-header">
-   <ion-col size="5" class="menu-icon">
+   <ion-col size="4" class="menu-icon">
      <ion-icon name="reorder-three"></ion-icon>
    </ion-col>
-   <ion-col size="5">
-     PãoBurger
+   <ion-col size="7">
+     PÃOBURGER
    </ion-col>
-   <ion-col size="0" class="c1-title">
+   <ion-col size="1" class="c1-title">
      <ion-icon name="person-circle-outline"></ion-icon>
    </ion-col>
  </ion-row>
+ <ion-row class = "c1-opcoes"> 
+  <ion-slides pager="false" class="o1-burger">
+    BURGERS
+  </ion-slides>
+  <ion-slides pager="false" class="o1-batata">
+    BATATA FRITA
+  </ion-slides>
+ </ion-row>
 </ion-header>
+
 
 <ion-content [fullscreen]="true">
 
 </ion-content>
+<ion-footer>
+  <ion-button class="b1-compra" expand="full">
+    <ion-icon name="cart"></ion-icon>
+    Adcionar ao carrinho
+  </ion-button>
+</ion-footer>

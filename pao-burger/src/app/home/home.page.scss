@@ -27,6 +27,22 @@
 }
 
 .c1-header{
-  margin: 20;
   background-color: #00fc61d8;
+  font-size: 1.5rem;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c1-opcoes{
+  font-size: 1.2rem;
+  background-color: #964b00 ;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.b1-compra{
+  background-color: #ff9602;
+  color: #FFFFFF;
 }
