@@ -11,18 +11,33 @@
    </ion-col>
  </ion-row>
  <ion-row class = "c1-opcoes"> 
-  <ion-slides pager="false" class="o1-burger">
-    BURGERS
-  </ion-slides>
-  <ion-slides pager="false" class="o1-batata">
-    BATATA FRITA
-  </ion-slides>
+  <ion-segment (ionChange) = "segmentChanged($event)">
+    <ion-segment-button value = 'burgers'>
+      <ion-slides pager="false" class="o1-burger">
+       BURGERS
+      </ion-slides>
+    </ion-segment-button>
+    <ion-segment-button value = 'fries'>
+     <ion-slides pager="false" class="o1-batata">
+      BATATA FRITA
+      </ion-slides>
+    </ion-segment-button>  
+    </ion-segment>
  </ion-row>
 </ion-header>
 
 
 <ion-content [fullscreen]="true">
 
+  <ion-row>
+    <ion-img src="assets/burger1.jpg"></ion-img>
+
+  </ion-row>
+
+  <ion-row>
+    <ion-img src="assets/burger2.jpg"></ion-img>
+
+  </ion-row>
 </ion-content>
 <ion-footer>
   <ion-button class="b1-compra" expand="full">
