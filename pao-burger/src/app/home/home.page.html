@@ -34,43 +34,23 @@
 </ion-header>
 
 
-<ion-content [fullscreen]="true" >
+<ion-content [fullscreen]="true" class="e1-content">
 
-<ion-grid *ngIf="segment == '0'">
-
+  <ion-grid *ngIf="segment == '0'">
     <ion-row>
-      <ion-col size = "6" class="b1-content">
-        <ion-img src="assets/burger1.jpg"></ion-img>
-      </ion-col>
 
-      <ion-col size = "5" class="b2-content">
-        <ion-img src="assets/burger5.jpg"></ion-img>
-      </ion-col>
-
-      <ion-col size = "6" class="b3-content">
-        <ion-img src="assets/burger3.jpg"></ion-img>
-      </ion-col>
     </ion-row>
-</ion-grid>
-
-<ion-grid *ngIf="segment == '1'">
+  </ion-grid>
+  <ion-grid *ngIf="segment == '1'">
     <ion-row>
-      <ion-col size = "6" class="f1-content">
-        <ion-img src="assets/teste3.jpg"></ion-img>
-      </ion-col>
 
-      <ion-col size = "5" class="f2-content">
-        <ion-img src="assets/batata4.jpg"></ion-img>
-      </ion-col>
-      
-      <ion-col size = "5" class="f3-content">
-        <ion-img src="assets/teste1.jpg"></ion-img>
-      </ion-col>
     </ion-row>
 
 
-</ion-grid>
+  </ion-grid>
+
 </ion-content>
+
 <ion-footer>
   <ion-button class="b1-compra" expand="full">
     <ion-icon name="cart"></ion-icon>
