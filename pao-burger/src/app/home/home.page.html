@@ -38,13 +38,75 @@
 
   <ion-grid *ngIf="segment == '0'">
     <ion-row>
-
-    </ion-row>
+      <ion-col size="6" *ngFor="let cardapio1 of cardapio1; let ix = index">
+           <ion-row>
+            <ion-col size="12" class="card-produto">
+ 
+             <ion-row>
+               <ion-col size="6" class="img-produto" >
+                 <img [src]="cardapioImg"/>
+               </ion-col>
+             </ion-row>
+ 
+             <ion-row style="height: 45px;"> 
+               <ion-col size="12" class="titulo-produto">
+                 {{cardapio1.nome}}
+               </ion-col>
+             </ion-row>
+ 
+             <ion-row>
+               <ion-col class="valor-produto">
+                 {{cardapio1.valor}}
+               </ion-col>
+             </ion-row>
+ 
+             <ion-row>
+               <ion-col size="12" class="col-botao-detalhes">
+                 <span class="botao-detalhes"> Detalhes </span>
+               </ion-col>
+             </ion-row>
+         
+          </ion-col>
+         </ion-row> 
+        </ion-col>
+       </ion-row>
+ 
   </ion-grid>
+
   <ion-grid *ngIf="segment == '1'">
     <ion-row>
-
-    </ion-row>
+      <ion-col size="6" *ngFor="let cardapio2 of cardapio2; let ix = index">
+           <ion-row>
+            <ion-col size="12" class="card-produto">
+ 
+             <ion-row>
+               <ion-col size="6" class="img-produto" >
+                 <img [src]="cardapioImg"/>
+               </ion-col>
+             </ion-row>
+ 
+             <ion-row style="height: 45px;"> 
+               <ion-col size="12" class="titulo-produto">
+                 {{cardapio2.nome}}
+               </ion-col>
+             </ion-row>
+ 
+             <ion-row>
+               <ion-col class="valor-produto">
+                 {{cardapio2.valor}}
+               </ion-col>
+             </ion-row>
+ 
+             <ion-row>
+               <ion-col size="12" class="col-botao-detalhes">
+                 <span class="botao-detalhes"> Detalhes </span>
+               </ion-col>
+             </ion-row>
+         
+          </ion-col>
+         </ion-row> 
+        </ion-col>
+       </ion-row>
 
 
   </ion-grid>
