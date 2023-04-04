@@ -14,9 +14,10 @@ export class DetalhesPage implements OnInit {
   
   public detalhes = { 
     
+    cod        : '',
     nome        : '',
     categoria   : '',
-    descricao   : '', 
+    Detalhes   : '', 
     valor       : '', 
     imagem     : '', 
     visibled    :false,

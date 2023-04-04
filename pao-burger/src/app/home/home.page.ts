@@ -12,7 +12,7 @@ export class HomePage{
 
 
   public cardapio1 = [
-    {cod: 1, nome: 'Moda da Casa', valor: "R$32,90", Detalhes: 'Burger mais famoso da casa, uma explosão de sabores, com muito pão e cheddar.', imagem:'burger1.jpg', visibled: false},
+    {cod: 1, nome: 'Moda da Casa', valor: "R$32,90", Detalhes: 'Burger mais famoso da casa, uma explosão de sabores, com muita cebola e um molho especial.', imagem:'burger1.jpg', visibled: false},
     {cod: 2, nome: 'Burger Não sei o nome',valor : "R$38,90", Detalhes: 'Ao contrario do nome, esse burger é um dos melhores da casa, com dois hambúrgueres e bacon.',  imagem:'burger5.jpg', visibled: false},
     {cod: 3, nome: 'Burger Socorro',valor: "R$35,90",  Detalhes: 'Como o nome diz, ao pedir esse burger você precisará de ajuda, pois é o lanche mais gorduroso da casa.', imagem:'burger3.jpg', visibled: false},
   ] 
