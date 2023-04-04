@@ -8,17 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetalhesPage implements OnInit {
 
-  public detalhesImg = '../../assets/imagens/';
+  public cardapioImg = '../../assets/';
  
   public quantidade = 0;
   
   public detalhes = { 
     
     nome        : '',
-    categoria   : 0,
+    categoria   : '',
     descricao   : '', 
     valor       : '', 
-    imagens     : '', 
+    imagem     : '', 
     visibled    :false,
 
   }

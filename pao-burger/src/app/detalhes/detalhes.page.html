@@ -8,8 +8,28 @@
 </ion-header>
 
 <ion-content>
+  <ion-row>
+    <ion-col size="12" class="img-produto" >
+      <img [src]="cardapioImg + detalhes.imagem"/>
+    </ion-col>
+  </ion-row>
 
+  <ion-row>
+    <ion-col size="12" class="descricao-produto">
+      {{ detalhes.descricao }}
+    </ion-col>
+  </ion-row>
+  <ion-footer class="footer-produto">
+
+    <ion-row class="ion-align-items-center">
+      <ion-col size="6" class="valor-produto">
+        {{detalhes.valor}}
+      </ion-col>
+    </ion-row>
+  </ion-footer>
 </ion-content>
+
+
 
 <ion-footer class="footer-produto">
   <ion-row class="ion-align-items-center">

@@ -13,7 +13,7 @@
  <ion-row > 
     <ion-col size = "6" class = "c1-opcoes">
       <ion-segment [(ngModel)] = "segment">
-        <ion-segment-button [value] = "'0'">
+        <ion-segment-button [value] = "categoria[0].id">
           <ion-slides pager="false" class="o1-burger">
           BURGERS
           </ion-slides>
@@ -23,7 +23,7 @@
       
     <ion-col size = "6" class = "c2-opcoes">
       <ion-segment [(ngModel)] = "segment">
-        <ion-segment-button [value] = "'1'">
+        <ion-segment-button [value] = "categoria[1].id">
           <ion-slides pager="false" class="o1-batata">
           BATATA FRITA
           </ion-slides>
@@ -36,33 +36,33 @@
 
 <ion-content [fullscreen]="true" class="e1-content">
 
-  <ion-grid *ngIf="segment == '0'">
-    <ion-row>
-      <ion-col size="6" *ngFor="let cardapio1 of cardapio1; let ix = index">
+  <ion-grid *ngFor="let categoria of categoria; let ix = index">
+    <ion-row *ngIf="segment == categoria.id">
+      <ion-col size="6" *ngFor="let detalhes of categoria.detalhes">
            <ion-row>
             <ion-col size="12" class="card-produto">
  
              <ion-row>
                <ion-col size="6" class="img-produto" >
-                 <img [src]="cardapioImg + cardapio1.imagem"/>
+                 <img [src]="cardapioImg + detalhes.imagem"/>
                </ion-col>
              </ion-row>
  
              <ion-row style="height: 45px;"> 
                <ion-col size="12" class="titulo-produto">
-                 {{cardapio1.nome}}
+                 {{detalhes.nome}}
                </ion-col>
              </ion-row>
  
              <ion-row>
                <ion-col class="valor-produto">
-                 {{cardapio1.valor}}
+                 {{detalhes.valor}}
                </ion-col>
              </ion-row>
  
              <ion-row>
-               <ion-col size="12" class="col-botao-detalhes" routerLink="/detalhes">
-                 <span class="botao-detalhes"> Detalhes </span>
+               <ion-col size="12" class="col-botao-detalhes">
+                 <span class="botao-detalhes" (click)="verDetalhes(detalhes)"> Detalhes </span>
                </ion-col>
              </ion-row>
          
@@ -73,45 +73,6 @@
  
        
   </ion-grid>
-
-  <ion-grid *ngIf="segment == '1'">
-    <ion-row>
-      <ion-col size="6" *ngFor="let cardapio2 of cardapio2; let ix = index">
-           <ion-row>
-            <ion-col size="12" class="card-produto">
- 
-             <ion-row>
-               <ion-col size="6" class="img-produto" >
-                 <img [src]="cardapioImg + cardapio2.imagem" />
-               </ion-col>
-             </ion-row>
- 
-             <ion-row style="height: 45px;"> 
-               <ion-col size="12" class="titulo-produto">
-                 {{cardapio2.nome}}
-               </ion-col>
-             </ion-row>
- 
-             <ion-row>
-               <ion-col class="valor-produto">
-                 {{cardapio2.valor}}
-               </ion-col>
-             </ion-row>
- 
-             <ion-row>
-               <ion-col size="12" class="col-botao-detalhes" routerLink="/detalhes">
-                 <span class="botao-detalhes"> Detalhes </span>
-               </ion-col>
-             </ion-row>
-         
-          </ion-col>
-         </ion-row> 
-        </ion-col>
-       </ion-row>
-
-
-  </ion-grid>
-
 
 </ion-content>
 
