@@ -49,9 +49,9 @@
   justify-content: center;
   align-items: center;
 }
-.b1-compra{
-  background-color: #7d2e9c;
-  border-radius: 70%;
+.ion-icon{
+  color:#fcf7ff;
+  background-color: #920ddf;
 }
 .o1-burger{
   color:#ffffff;
@@ -92,4 +92,17 @@
   width: 100px;
   border-radius: 4px;
   text-align: center;
+}
+
+.titulo-produto{
+  font-size: 20px;
+  text-align: center;
+}
+
+.valor-produto{
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
 }
